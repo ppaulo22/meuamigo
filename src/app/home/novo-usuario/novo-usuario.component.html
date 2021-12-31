@@ -1,0 +1,38 @@
+<h4 class="text-center">Registre-se, queremos ver o seu amigo.</h4>
+
+<form [formGroup]="novoUsuarioForm" (submit)="(cadastrar)">
+  <div class="row mb-3">
+    <input
+    placeholder="e-mail"
+    class="form-control"
+    formControlName="email"
+    />
+  </div>
+  <div class="row mb-3">
+    <input
+      placeholder="Nome Completo"
+      class="form-control"
+      formControlName="fullName"
+    />
+  </div>
+  <div class="row mb-3">
+    <input
+      placeholder="Usuário"
+      class="form-control"
+      formControlName="userName"
+    />
+  </div>
+  <div class="row mb-3">
+    <input
+      type="password"
+      placeholder="Senha"
+      class="form-control"
+      formControlName="password"
+    />
+  </div>
+  <div class="row mb-3">
+    <button class="btn btn-primary col-12 btn-block">Cadastro</button>
+  </div>
+</form>
+
+<p>Já é um usuário?<a [routerLink]="['']"> Faça login</a></p>
