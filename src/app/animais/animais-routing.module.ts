@@ -5,12 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: ':animalId',
+    path: '',
     component: ListaAnimaisComponent,
   },
 
   {
-    path: '',
+    path: ':animalId',
     component: DetalheAnimalComponent,
   }
 ];
