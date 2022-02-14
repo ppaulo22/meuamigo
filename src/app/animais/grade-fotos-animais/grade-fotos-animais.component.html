@@ -5,14 +5,14 @@
 <div class="card-group">
   <div class="card-body" *ngFor="let animal of animais">
 
-    <a [routerLink]="['/animais', animal.id]">
+    <a  id="sem-linha" [routerLink]="['/animais', animal.id]">
       <app-cartao>
       <app-animal
         [url]="animal.url"
         [descricao]="animal.description">
       </app-animal>
-      <i aria-hidden="true" class="fa fa-heart-o ms-2 me-2">{{ animal.likes }}</i>
-      <i aria-hidden="true" class="fa fa-comment-o  ms-2 me-2">{{ animal.comments }}</i>
+      <span> <i aria-hidden="true" class="fa fa-heart-o ms-2"></i> {{ animal.likes }} </span>
+      <span> <i aria-hidden="true" class="fa fa-comment-o ms-2"></i> {{ animal.comments }} </span>
     </app-cartao>
   </a>
 

@@ -10,8 +10,8 @@
       <div class="col-lg-4">
         <small>
           <p class="text-left break-word"> {{ animal.description }} </p>
-          <i (click)="curtir()" class="fa fa-heart-o  ms-2 me-2"> {{ animal.likes }} </i>
-          <i class="fa fa-comment  ms-2 me-2"> {{ animal.comments }} </i>
+          <i (click)="curtir()" class="fa fa-heart icon-heart ms-2 md-2"></i><span>{{ animal.likes }}</span>
+          <i class="fa fa-comment ms-2 md-2"></i><span>{{ animal.comments }}</span>
           <i (click)="excluir()" class="fa fa-trash pull-right"></i>
         </small>
 
