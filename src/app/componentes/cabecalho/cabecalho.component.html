@@ -1,7 +1,22 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand">Meu Amigo</a>
+      <a class="navbar-brand"><i
+        class="fa fa-bars mr-2"
+        (click)="menu.abreMenu()"
+        (keyup.space)="menu.abreMenu()"
+        >
+      </i>
+      Meu Amigo
+    </a>
+
+      <app-menu #menu>
+        <ul class="list-unstyled">
+          <li>
+            <a [routerLink]="['animais', 'novo']">Novo Animal</a>
+          </li>
+        </ul>
+      </app-menu>
         <button
           class="navbar-toggler"
           type="button"

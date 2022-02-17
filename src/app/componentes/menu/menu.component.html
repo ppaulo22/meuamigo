@@ -1,8 +1,8 @@
 <div [ngClass]="{'active-menu':mostraMenu}">
   <div class="menu-bar">
-    <i class="fa fawindows-close"
+    <i class="fa fa-window-close"
     (click)="abreMenu()"
-    (key.space)="abreMenu()"
+    (keyup.space)="abreMenu()"
     >
     </i>
     <ng-content></ng-content>
