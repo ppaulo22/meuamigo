@@ -12,6 +12,7 @@ const NOT_MODIFIED = '304';
   providedIn: 'root'
 })
 export class AnimaisService {
+  [x: string]: any;
 
   constructor(private http: HttpClient, private tokenService: TokenService) { }
 
