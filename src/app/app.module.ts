@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
+import { NovoAnimalComponent } from './animais/novo-animal/novo-animal.component';
 
 @NgModule({
   declarations: [AppComponent],

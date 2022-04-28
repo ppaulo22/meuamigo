@@ -13,7 +13,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./lista-animais.component.css']
 })
 export class ListaAnimaisComponent implements OnInit {
-  animais !: Animais;
+  animais!: Animais;
+  
 
   constructor(
     private activatedRoute: ActivatedRoute

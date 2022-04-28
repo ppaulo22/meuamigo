@@ -2,8 +2,9 @@
   Desculpe não há amigos.
 </p>
 
-<div class="card-group">
-  <div class="card-body" *ngFor="let animal of animais">
+
+  <div class="row mt-4">
+  <div class="col-sm-4 d-flex justify-content-center" *ngFor="let animal of animais">
 
     <a  id="sem-linha" [routerLink]="['/animais', animal.id]">
       <app-cartao>
@@ -17,6 +18,6 @@
   </a>
 
   </div>
-</div>
 
+</div>
 
